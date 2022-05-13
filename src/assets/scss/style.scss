@@ -11,7 +11,7 @@ img {
   max-width: 100%;
 }
 
-button{
+button {
   border: none;
 }
 
@@ -22,7 +22,7 @@ li {
   padding: 0;
 }
 
-a{
+a {
   color: black;
   text-decoration: none;
 }
@@ -37,6 +37,48 @@ a{
 
 }
 
-.container-fluid{
-  max-width: 1440px;
+/* Common Rules */
+
+.container-fluid {
+  max-width: 90%;
+  max-width: 1700px;
+}
+
+.pc_btn {
+  font-size: 1.2rem;
+  padding: 0.4rem 1.6rem;
+  border-radius: 15px;
+  white-space: nowrap;
+}
+
+.btn_primary {
+  background-color: $pc-btn-primary;
+  background: linear-gradient(90deg,
+      $pc-btn-primary 0%,
+      #f8626b 100%);
+  color: $pc-text-light-primary;
+}
+
+.btn_primary:hover{
+  background: linear-gradient(90deg,
+  $pc-btn-secondary 0%,
+  #1e3f83 100%);
+color: $pc-text-light-primary;
+
+}
+
+.btn_secondary {
+  background-color: $pc-btn-secondary;
+  background: linear-gradient(90deg,
+      $pc-btn-secondary 0%,
+      #1e3f83 100%);
+  color: $pc-text-light-primary;
+}
+
+.btn_secondary:hover{
+  background-color: $pc-btn-primary;
+  background: linear-gradient(90deg,
+      $pc-btn-primary 0%,
+      #f8626b 100%);
+  color: $pc-text-light-primary;
 }

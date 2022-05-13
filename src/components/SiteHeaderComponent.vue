@@ -9,7 +9,7 @@
             </div>
           </div>
           <div class="col d-flex align-items-center justify-content-end">
-            <ul class="d-flex">
+            <ul class="d-md-flex d-none">
               <li
                 class="nav_item px-3"
                 v-for="item in navItems.items"
@@ -18,7 +18,7 @@
                 <a href="#">{{ item }}</a>
               </li>
             </ul>
-            <div class="ps-3 sign_up">
+            <div class="ps-3 sign_up ">
               <button class="pc_btn btn_secondary">
                 {{ navItems.login }}
               </button>
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: "SiteHeader",
+  name: "SiteHeaderComponent",
   data() {
     return {
       navItems: {
@@ -53,22 +53,14 @@ header {
   color: $pc-text-light-primary;
 
   nav {
-      padding: 1rem 0;
+    padding: 1rem 0;
     .nav_item a {
       color: $pc-text-light-primary;
     }
     .nav_item a:hover {
       color: $pc-text-alert;
     }
-    .sign_up{
-        .pc_btn{
-            padding: 0.4rem 1.5rem;
-            border-radius: 15px;
-            background-color: $pc-btn-secondary;
-            background: linear-gradient(90deg,  $pc-btn-secondary 0%, $pc-light-tertiary 100%);;
-            color: $pc-text-light-primary;
-        }
-    }
+
   }
 }
 </style>
