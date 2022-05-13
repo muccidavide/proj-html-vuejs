@@ -1,29 +1,29 @@
 <template>
-  <section class="what_we_do">
+  <section class="what_we_do text-center">
     <div class="container-fluid">
       <div class="section_header text-center">
         <p class="pc_text_alert">Our Services</p>
         <h2 class="display-4"><span class="fw-bold">What</span> We Do</h2>
         <p>When, while the lovely valley teems with vapour around meand the</p>
-        <div class="row row-cols-4 px-3">
-          <div
-            class="pc_card col"
-            v-for="(card, index) in whatWeDo"
-            :key="'whatWeDo:' + index"
-          >
-            <img
-              :src="require('/src/assets/img/' + card.img)"
-              :alt="'display' + card.title"
-              srcset=""
-            />
-            <div class="card_details">
-              <h3 class="fw-bold">{{ card.title }}</h3>
-              <p>{{ card.details }}</p>
-            </div>
+      </div>
+      <div class="row row-cols-4 px-3">
+        <div
+          class="pc_card col"
+          v-for="(card, index) in whatWeDo"
+          :key="'whatWeDo:' + index"
+        >
+          <img
+            :src="require('@/assets/img/' + card.img)"
+            :alt="'display' + card.title"
+            srcset=""
+          />
+          <div class="card_details">
+            <h3 class="fw-bold">{{ card.title }}</h3>
+            <p>{{ card.details }}</p>
           </div>
         </div>
-        <button class="pc_btn btn_primary me-3">View All Services</button>
       </div>
+      <button class="pc_btn btn_primary me-3">View All Services</button>
     </div>
   </section>
 </template>
