@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <h1 class="text-center">Start</h1>
+    <SiteHeader></SiteHeader>
 
   </div>
 </template>
 
 <script>
+import SiteHeader from "@/components/SiteHeader.vue";
 
 
 export default {
   name: 'App',
   components: {
+    SiteHeader,
   }
 }
 </script>
