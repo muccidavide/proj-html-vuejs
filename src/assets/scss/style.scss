@@ -37,6 +37,18 @@ a {
 
 }
 
+/* Utilities */
+.pc_text_primary{
+  color: $pc-text-light-primary;
+}
+.pc_bg_dark{
+  background-color: $pc-bg-dark;
+}
+
+.pc_text_alert{
+  color: $pc-text-alert;
+}
+
 /* Common Rules */
 
 .container-fluid {
@@ -81,4 +93,14 @@ color: $pc-text-light-primary;
       $pc-btn-primary 0%,
       #f8626b 100%);
   color: $pc-text-light-primary;
+}
+
+.jumbo {
+  .col-5 {
+    .jumbo_info {
+      .info {
+        margin: 3rem 0;
+      }
+    }
+  }
 }

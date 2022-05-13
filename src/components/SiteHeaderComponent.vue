@@ -53,7 +53,7 @@ header {
   color: $pc-text-light-primary;
 
   nav {
-    padding: 1rem 0;
+    padding: 1rem 12rem;
     .nav_item a {
       color: $pc-text-light-primary;
     }
