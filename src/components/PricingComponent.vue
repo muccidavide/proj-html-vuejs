@@ -120,7 +120,7 @@ export default {
     margin: 3rem auto;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    box-shadow: 2px 2px 3px hsl(0deg 0% 94%);
+    box-shadow: 0px 0px 2px 2px hsl(0deg 0% 94%);
     max-width: 80%;
 
     .price_number {

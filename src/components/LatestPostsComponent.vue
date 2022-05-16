@@ -4,7 +4,7 @@
       <div class="section_header text-center">
         <p class="pc_text_alert">Blog</p>
         <h2 class="display-4"><span class="fw-bold">Latest</span> Posts</h2>
-        <p>When, while the lovely valley teems with vapour around meand the</p>
+        <p>When, while the lovely valley teems with vapour around meand the, and the meridian su s...</p>
       </div>
     </div>
     <div class="posts">
@@ -14,10 +14,10 @@
             <div class="info">
               <span
                 >April 21,2019
-                <font-awesome-icon icon="fa-solid fa-circle" size="xs" /> by
+                <font-awesome-icon icon="fa-solid fa-circle" class="mx-2" size="2xs" /> by
                 Paul</span
               >
-              <h5>Amazon gets CCI to acquire 49% stake in</h5>
+              <h5 class="my-3">Amazon gets CCI to acquire 49% stake in</h5>
               <p>
                 When, while the lovely valley teems with vapour around meand
                 the...
@@ -29,7 +29,7 @@
           <div class="corporation">
             <span
               >April 21,2019
-              <font-awesome-icon icon="fa-solid fa-circle" size="xs" /> by
+              <font-awesome-icon icon="fa-solid fa-circle" class="mx-2" size="2xs" /> by
               Paul</span
             >
             <h5 class="my-3 py-3">Amazon gets CCI to acquire 49% stake in</h5>
@@ -46,7 +46,7 @@
           <div class="london">
                           <span
               >April 21,2019
-              <font-awesome-icon icon="fa-solid fa-circle" size="xs" /> by
+              <font-awesome-icon icon="fa-solid fa-circle" class="mx-2" size="2xs" /> by
               Paul</span
             >
             <h5 class="my-3 py-3">Amazon gets CCI to acquire 49% stake in</h5>
@@ -78,6 +78,7 @@ export default {
 <style lang='scss' scoped>
 .row {
   color: white;
+  margin: 3rem;
   .amazon {
     position: relative;
     margin: 2rem;
@@ -100,7 +101,7 @@ export default {
   }
   .corporation,
   .london {
-      margin: 0 2rem;
+      margin: 0 1rem;
           border-radius: 20px;
       min-height: 350px;
       padding: 2rem;
@@ -113,8 +114,8 @@ export default {
   }
   .info {
     position: absolute;
-    bottom: 0;
-    left: 1rem;
+    bottom: 1rem;
+    left: 2rem;
   }
 }
 </style>
