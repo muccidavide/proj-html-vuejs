@@ -4,9 +4,8 @@
       <div class="container-fluid">
         <div class="row row-cols-2 align-items-center justify-content-between">
           <div class="col">
-            <div class="logo_site">
-              <img src="@/assets/img/white-logo-2.png" alt="" />
-            </div>
+            <LogoSiteComponent></LogoSiteComponent>
+
           </div>
           <div class="col d-flex align-items-center justify-content-end">
 
@@ -35,8 +34,12 @@
 </template>
 
 <script>
+import LogoSiteComponent from "@/components/LogoSiteComponent.vue";
 export default {
   name: "SiteHeaderComponent",
+  components:{
+    LogoSiteComponent,
+  },
   data() {
     return {
       navItems: {
@@ -53,11 +56,12 @@ export default {
 
 <style lang='scss' scoped>
 header {
+  margin-bottom: -1px;
   background-color: $pc-bg-dark;
   color: $pc-text-light-primary;
 
   nav {
-    padding: 1rem 5%;
+    padding: 1rem 3%;
     .nav_item a {
       color: $pc-text-light-primary;
     }

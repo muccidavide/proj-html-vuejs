@@ -89,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col">
           <div class="logo_box">
             <img src="@/assets/img/client-1-1.png" alt="" />
@@ -147,5 +147,9 @@ export default {
   .rating {
     color: $pc_text_alert;
   }
+}
+.logo_box{
+    width: 10rem;
+    margin: auto;
 }
 </style>
