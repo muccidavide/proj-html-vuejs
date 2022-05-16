@@ -1,14 +1,14 @@
 <template>
   <section class="jumbo business_planning py-3">
     <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col col-lg-5 text-center text-lg-start jumbo_col">
           <div class="jumbo_header">
             <h2 class="fw-bold display-3">Business Planning</h2>
             <h2 class="display-3">Digital Technology</h2>
             <h2 class="fw-bold display-3">Modern Solution!</h2>
           </div>
-          <div class="jumbo_info">
+          <div class="jumbo_info m-auto m-lg-0">
             <p class="info">
               When, while the lovely valley teems with vapour around meand the
               meridian sun strikes the upper surface.
@@ -42,9 +42,9 @@ export default {
 .jumbo {
   color: $pc-text-light-primary;
   background-color: $pc-bg-dark;
-  .col-5 {
+  .jumbo_col {
     .jumbo_info {
-      max-width: 75%;
+      width: 75%;
       .info {
         margin-bottom: 3rem;
       }

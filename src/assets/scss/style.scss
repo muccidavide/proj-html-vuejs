@@ -55,11 +55,12 @@ a {
 /* Common Rules */
 
 .container-fluid {
-  max-width: 90%;
+  width: 90%;
   max-width: 1700px;
 }
 
 .pc_btn {
+  margin: 1rem;
   font-size: 1.2rem;
   padding: 0.4rem 1.6rem;
   border-radius: 15px;

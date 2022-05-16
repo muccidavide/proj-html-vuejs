@@ -6,7 +6,7 @@
         <h2 class="display-4"><span class="fw-bold">What</span> We Do</h2>
         <p>When, while the lovely valley teems with vapour around meand the</p>
       </div>
-      <div class="row row-cols-4 px-3">
+      <div class="row row-cols row-cols-md-2 row-cols-lg-4 px-3">
         <div
           class="pc_card col"
           v-for="(card, index) in whatWeDo"
@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: "component_name",
+  name: "WhatWeDoComponent",
   data() {
     return {
       whatWeDo: [

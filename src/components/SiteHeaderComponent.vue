@@ -9,7 +9,8 @@
             </div>
           </div>
           <div class="col d-flex align-items-center justify-content-end">
-            <ul class="d-md-flex d-none">
+
+            <ul class="d-lg-flex d-none">
               <li
                 class="nav_item px-3"
                 v-for="item in navItems.items"
@@ -22,6 +23,9 @@
               <button class="pc_btn btn_secondary">
                 {{ navItems.login }}
               </button>
+            </div>
+                        <div class="nav_item bars d-lg-none">
+              <font-awesome-icon icon="fa-solid fa-bars" size="2x"/>
             </div>
           </div>
         </div>
@@ -53,7 +57,7 @@ header {
   color: $pc-text-light-primary;
 
   nav {
-    padding: 1rem 12rem;
+    padding: 1rem 5%;
     .nav_item a {
       color: $pc-text-light-primary;
     }

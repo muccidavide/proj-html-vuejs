@@ -2,12 +2,12 @@
   <section class="jumbo grow_your_business pc_bg_dark pc_text_primary">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-7">
+        <div class=" d-none d-xl-block col-xl-7">
           <div class="jumbo_img_box">
             <img src="@/assets/img/men-data.png" alt="employer at office" />
           </div>
         </div>
-        <div class="col-5">
+        <div class="col col-xl-5">
           <div class="jumbo_header">
             <p class="mb-3">Start Your Project</p>
             <h2 class="fw-bold display-3">Grow Your Business</h2>
@@ -42,18 +42,19 @@ export default {
 
 <style lang='scss' scoped>
 .jumbo {
-  padding: 4rem 10rem;
+  padding: 10% 1rem;
 }
 
 .jumbo_img_box {
-  padding: 2rem;
+  text-align: right;
+  padding: 5%;
+
+  img {
   background-image: url("@/assets/img/nemoodar.png");
   background-repeat: no-repeat;
   background-size: 90%;
   background-position-y: 2.3rem;
-  width: 600px;
-  img {
-    margin-top: 4rem;
+  width: 80%;
   }
 }
 </style>
