@@ -42,11 +42,11 @@ export default {
 
 <style lang='scss' scoped>
 .jumbo {
-  padding: 10% 1rem;
+  padding: 5rem 10%;
 }
 
 .jumbo_img_box {
-  text-align: right;
+  margin: auto;
   padding: 5%;
 
   img {
@@ -54,7 +54,8 @@ export default {
   background-repeat: no-repeat;
   background-size: 90%;
   background-position-y: 2.3rem;
-  width: 80%;
+  width: 70%;
+  max-width: 500px;
   }
 }
 </style>

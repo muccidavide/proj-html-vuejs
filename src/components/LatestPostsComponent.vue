@@ -12,7 +12,7 @@
 
       <div class="posts">
         <div class="row align-items-center">
-          <div class="col-6">
+          <div class="col col-xxl-6">
             <div class="amazon">
               <div class="info">
                 <span
@@ -32,7 +32,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col col-xxl-3">
             <div class="corporation">
               <span
                 >April 21,2019
@@ -51,7 +51,7 @@
               <button class="pc_btn">Read More</button>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col col-xxl-3">
             <div class="london">
               <span
                 >April 21,2019
@@ -93,9 +93,9 @@ export default {
   margin: 3rem;
   .amazon {
     position: relative;
-    margin: 2rem;
+    margin: 0 0.5rem;
     border-radius: 20px;
-    height: 350px;
+    height: 400px;
     background-image: url("@/assets/img/amazon.jpg");
     background-size: cover;
     max-width: 100%;
@@ -111,12 +111,19 @@ export default {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
   }
+  h5{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  p,span,button{
+    font-size: 1rem;
+  }
   .corporation,
   .london {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     border-radius: 20px;
-    min-height: 350px;
-    padding: 2rem;
+    height: 400px;
+    padding: 3.5rem;
     background: rgb(3, 3, 49);
     background: linear-gradient(
       121deg,
@@ -128,6 +135,10 @@ export default {
     position: absolute;
     bottom: 1rem;
     left: 2rem;
+  }
+  button{
+    margin-top: 4rem;
+    padding: 0.5rem 2rem;
   }
 }
 </style>

@@ -25,6 +25,8 @@
                   <span class="dollar_icon text-start position-absolute">$</span
                   ><br />
                 </span>
+
+                <small class="month">Per Month</small>
               </div>
             </div>
             <div class="details">
@@ -121,12 +123,12 @@ export default {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px hsl(0deg 0% 94%);
-    max-width: 80%;
+    max-width: 95%;
 
     .price_number {
-      margin: 1.5rem 0;
+      margin-top: 1.5rem;
       display: inline-block;
-      font-size: 4rem;
+      font-size: 6rem;
       font-weight: bold;
       padding-top: 0.5rem;
     }
@@ -137,6 +139,15 @@ export default {
       top: 10%;
       left: 0;
       transform: translate(-50%, -50%);
+    }
+
+    .details{
+      margin-bottom: 2rem;
+    }
+
+    .month{
+      display: block;
+      margin-bottom: 3rem ;
     }
 
     li {
@@ -172,12 +183,10 @@ export default {
       background: white;
     }
     .btn_primary:hover {
-  background-color: $pc-btn-primary;
-  background: linear-gradient(90deg,
-      $pc-btn-primary 0%,
-      #f8626b 100%);
-  color: $pc-text-light-primary;
-  border: 1px solid white;
+      background-color: $pc-btn-primary;
+      background: linear-gradient(90deg, $pc-btn-primary 0%, #f8626b 100%);
+      color: $pc-text-light-primary;
+      border: 1px solid white;
     }
   }
   .order_now {
