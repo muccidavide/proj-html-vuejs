@@ -3,7 +3,7 @@
     <div
       class="
         row row-cols-1
-        text-center
+        text-center text-xl-start
         m-auto
         row-cols-lg-2 row-cols-xl-4
         text_primary
@@ -15,7 +15,7 @@
           <LogoSiteComponent></LogoSiteComponent>
         </div>
 
-        <div class="logo_info">
+        <div class="logo_info m-auto m-xl-0 mb-2">
           <p>
             {{ logoInfo }}
           </p>
@@ -84,7 +84,7 @@ export default {
   }
   .logo_info {
     width: 50%;
-    margin: 1rem auto;
+    margin: 1rem 0;
   }
 
   a {
@@ -99,10 +99,10 @@ export default {
   p {
     color: $pc-text-light-secondary;
     font-size: 1rem;
-    margin: 0.3rem;
+    margin: 0.3rem 0;
   }
   address {
-    margin: 2rem auto;
+    margin: 2rem 0;
     max-width: 80%;
   }
 
