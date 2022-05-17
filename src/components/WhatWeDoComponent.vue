@@ -6,7 +6,7 @@
         <h2 class="display-4"><span class="fw-bold">What</span> We Do</h2>
         <p>When, while the lovely valley teems with vapour around meand the</p>
       </div>
-      <div class="row row-cols row-cols-md-2 row-cols-lg-4 px-3">
+      <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-4 px-3">
         <div
           class="pc_card col"
           v-for="(card, index) in whatWeDo"
@@ -68,18 +68,31 @@ export default {
 
 <style lang='scss' scoped>
 .what_we_do {
-  margin: 4rem 0;
+  margin: 5rem 0;
   .pc_card {
-    padding: 4rem;
+    padding: 4.5rem 4rem;
+    position: relative;
+    margin-top: 10rem ;
 
     img {
+      position: absolute;
       aspect-ratio: 1/1;
       width: 200px;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%,-50%);
     }
 
     h3 {
       margin: 2rem 0;
     }
+  }
+
+  .pc_card:hover{
+    color: white;
+    background: linear-gradient(0deg, rgb(3, 3, 49) 20%, rgb(24, 50, 112) 100%,white 0%,);
+    border-radius:20px ;
+
   }
 }
 </style>

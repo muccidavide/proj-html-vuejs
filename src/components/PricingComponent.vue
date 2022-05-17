@@ -20,7 +20,7 @@
               <h3 class="fw-bold">{{ card.title }}</h3>
               <h5>{{ card.subTitle }}</h5>
               <div class="price">
-                <span class="price_number position-relative" data-title="text"
+                <span class="price_number position-relative" data-title="40"
                   >{{ card.price }}
                   <span class="dollar_icon text-start position-absolute">$</span
                   ><br />
@@ -59,7 +59,7 @@
             </div>
           </div>
 
-          <div class="price_shadow pc_text_secondary" data-title="shadow">
+          <div class="price_shadow pc_text_secondary" data-title="40">
             {{ card.price }}
           </div>
         </div>
@@ -141,13 +141,13 @@ export default {
       transform: translate(-50%, -50%);
     }
 
-    .details{
+    .details {
       margin-bottom: 2rem;
     }
 
-    .month{
+    .month {
       display: block;
-      margin-bottom: 3rem ;
+      margin-bottom: 3rem;
     }
 
     li {

@@ -91,15 +91,53 @@
           </div>
         </div>
       </div>
-      <div class="footer_copyrights">
-          <div class="row">
-              <div class="col">
-                  <p>&#169; 2022 Boolean Srl. All Right Reserved</p>
-              </div>
-              <div class="col">
-                  
-              </div>
+    </div>
+    <div class="footer_copyrights pc_text_secondary align-items-center">
+      <div class="container-fluid">
+        <div class="row mx-3">
+          <div class="col d-flex align-items-center">
+            <small>&#169; 2022 Boolean Srl. All Right Reserved</small>
           </div>
+          <div class="col">
+            <div
+              class="
+                socials
+                text-end
+                d-flex
+                align-items-center
+                justify-content-end
+              "
+            >
+              <font-awesome-icon
+                class="social_icon"
+                size="lg"
+                icon="fa-brands fa-instagram"
+              />
+              <font-awesome-icon
+                class="social_icon"
+                size="lg"
+                icon="fa-brands fa-linkedin-in"
+              />
+              <font-awesome-icon
+                class="social_icon"
+                size="lg"
+                icon="fa-brands fa-facebook-f"
+              />
+              <font-awesome-icon
+                class="social_icon"
+                size="lg"
+                icon="fa-brands fa-twitter"
+              />
+
+              <div>
+                <font-awesome-icon
+                  class="arrow_up"
+                  icon="fa-solid fa-arrow-up"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -146,24 +184,54 @@ footer {
     }
   }
   .footer_nav {
+    .logo{
+      margin-bottom: 2rem ;
+    }
+
+
     a {
       display: inline-block;
     }
+    a:hover {
+      color: $pc-text-alert;
+    }
+
     a,
     p {
       color: $pc-text-light-secondary;
       font-size: 1rem;
       margin: 0.5rem 0;
     }
-    p,
     address {
-      margin-top: 2rem;
+      margin: 2rem 0;
     }
-    h4 > a, span {
+
+    h4 > a,
+    span {
       color: white;
     }
-    a:hover {
-      color: $pc-text-alert;
+  }
+  .footer_copyrights {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.229);
+    .socials {
+      position: relative;
+
+      .social_icon {
+        padding: 2rem 1.6rem;
+      }
+      .arrow_up {
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+        padding: 0.6rem;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        right: 0%;
+        transform: translate(50%, -50%);
+      }
     }
   }
 }

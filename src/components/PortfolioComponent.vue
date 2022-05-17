@@ -26,7 +26,6 @@
           class="col-md-12 col-xl-6 col-xxl-3"
           v-for="(work, index) in recentWorks"
           :key="'workKey' + index"
-          
         >
           <div class="project_card m-auto">
             <div class="project_img">
@@ -49,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="slider_nav text-center ">
+    <div class="slider_nav text-center">
       <font-awesome-icon
         v-for="(n, index) in recentWorks.length"
         :key="index"
@@ -109,7 +108,7 @@ export default {
           this.recentWorks.shift();
           this.activeWork--;
           if (this.activeWork < 0) {
-            this.activeWork = this.recentWorks.length -1;
+            this.activeWork = this.recentWorks.length - 1;
           }
         }
       });
@@ -165,6 +164,11 @@ export default {
           min-height: 110px;
           padding: 2rem 2rem 1rem;
         }
+      }
+      .project_card:hover {
+        background-color: #b9276e;
+        background: linear-gradient(90deg, #b9276e 0%, #f8626b 100%);
+        color: #ffffff;
       }
     }
   }

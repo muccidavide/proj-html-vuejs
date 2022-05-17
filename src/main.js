@@ -13,17 +13,40 @@ import "@fontsource/cairo/700.css"
 
 /* Font Awesome icons*/
 /* import the fontawesome core */
-import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  library
+} from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons 👇 QUI AGGIUNGI LE ICONE che vuoi usare in camelCase */
-import { faUserSecret, faMagnifyingGlass, faArrowRight, faArrowLeft, faBars, faCircle , faStar} from '@fortawesome/free-solid-svg-icons'
-import {faStar as farStar} from '@fortawesome/free-regular-svg-icons'
+import {
+  faUserSecret,
+  faMagnifyingGlass,
+  faArrowRight,
+  faArrowLeft,
+  faBars,
+  faCircle,
+  faStar,
+  faArrowUp
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  faStar as farStar
+} from '@fortawesome/free-regular-svg-icons'
+
+import {
+  faInstagram,
+  faLinkedinIn,
+  faFacebookF,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
 
 /* import font awesome icon component */
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import {
+  FontAwesomeIcon
+} from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library 👇 QUI AGGIUNGI IL NOME DELL'ICONA in camelCase*/
-library.add(faUserSecret, faMagnifyingGlass,faArrowRight, faArrowLeft, faBars, faCircle, faStar, farStar) 
+library.add(faUserSecret, faMagnifyingGlass, faArrowRight,
+  faArrowLeft, faBars, faCircle, faStar, farStar, faInstagram, faLinkedinIn, faFacebookF,faTwitter,faArrowUp)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
@@ -36,4 +59,3 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 new Vue({
   render: h => h(App),
 }).$mount('#app')
-
