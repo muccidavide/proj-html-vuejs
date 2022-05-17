@@ -4,7 +4,7 @@
       <div class="section_header row row-cols-2">
         <div class="col">
           <p class="pc_text_alert">Portfolio</p>
-          <h2 class="display-4"><span class="fw-bold">Latest</span> Work</h2>
+          <h2 class="display-5"><span class="fw-bold">latest</span> work</h2>
         </div>
         <div class="col d-flex align-items-center justify-content-end">
           <font-awesome-icon
@@ -151,24 +151,32 @@ export default {
 
     .row {
       flex-wrap: nowrap;
-      .project_card {
-        width: 600px;
-        min-width: 70%;
-        max-width: 100%;
-        border-radius: 20px;
-        box-shadow: 0 0 20px lightgray;
-        .project_img img {
+      .col-xxl-3 {
+        min-width: 30%;
+                          margin: 1.5rem;
+
+
+        .project_card {
+
+          width: 600px;
+          min-width: 70%;
+          max-width: 100%;
           border-radius: 20px;
+          box-shadow: 0 0 20px lightgray;
+          .project_img img {
+            border-radius: 20px;
+          }
+          .project_details {
+            height: 80px;
+            overflow: hidden;
+            padding: 1rem 2rem;
+          }
         }
-        .project_details {
-          min-height: 110px;
-          padding: 2rem 2rem 1rem;
+        .project_card:hover {
+          background-color: #b9276e;
+          background: linear-gradient(90deg, #b9276e 0%, #f8626b 100%);
+          color: #ffffff;
         }
-      }
-      .project_card:hover {
-        background-color: #b9276e;
-        background: linear-gradient(90deg, #b9276e 0%, #f8626b 100%);
-        color: #ffffff;
       }
     }
   }

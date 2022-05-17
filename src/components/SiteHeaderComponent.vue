@@ -7,26 +7,8 @@
             <LogoSiteComponent></LogoSiteComponent>
 
           </div>
-          <div class="col d-flex align-items-center justify-content-end">
+          <NavbarHeaderComponent :navItems="navItems"></NavbarHeaderComponent>
 
-            <ul class="d-lg-flex d-none">
-              <li
-                class="nav_item px-3"
-                v-for="item in navItems.items"
-                :key="'item_key:' + item"
-              >
-                <a href="#">{{ item }}</a>
-              </li>
-            </ul>
-            <div class="ps-3 sign_up ">
-              <button class="pc_btn btn_secondary">
-                {{ navItems.login }}
-              </button>
-            </div>
-                        <div class="nav_item bars d-lg-none">
-              <font-awesome-icon icon="fa-solid fa-bars" size="2x"/>
-            </div>
-          </div>
         </div>
       </div>
     </nav>
@@ -35,10 +17,12 @@
 
 <script>
 import LogoSiteComponent from "@/components/LogoSiteComponent.vue";
+import NavbarHeaderComponent from "@/components/NavbarHeaderComponent.vue";
 export default {
   name: "SiteHeaderComponent",
   components:{
     LogoSiteComponent,
+    NavbarHeaderComponent,
   },
   data() {
     return {
@@ -62,12 +46,7 @@ header {
 
   nav {
     padding: 1rem 3%;
-    .nav_item a {
-      color: $pc-text-light-primary;
-    }
-    .nav_item a:hover {
-      color: $pc-text-alert;
-    }
+
 
   }
 }

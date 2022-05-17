@@ -12,7 +12,7 @@
 
       <div class="posts">
         <div class="row align-items-center">
-          <div class="col col-xxl-6">
+          <div class="col-xl-1 col-xxl-6">
             <div class="amazon">
               <div class="info">
                 <span
@@ -27,12 +27,12 @@
                 <h5 class="my-3">Amazon gets CCI to acquire 49% stake in</h5>
                 <p>
                   When, while the lovely valley teems with vapour around meand
-                  the...
+                  the, and the meridian su s...
                 </p>
               </div>
             </div>
           </div>
-          <div class="col col-xxl-3">
+          <div class="col-xl-2 col-xxl-3">
             <div class="corporation">
               <span
                 >April 21,2019
@@ -43,15 +43,17 @@
                 />
                 by Paul</span
               >
-              <h5 class="my-3 py-3">Amazon gets CCI to acquire 49% stake in</h5>
+              <h5 class="my-3 py-3">
+                Clearing Corporations get SEBI nod to invest in overnight funds
+              </h5>
               <p>
                 When, while the lovely valley teems with vapour around meand
-                the...
+                the, and the meridian su s...
               </p>
               <button class="pc_btn">Read More</button>
             </div>
           </div>
-          <div class="col col-xxl-3">
+          <div class="col-xl-2 col-xxl-3">
             <div class="london">
               <span
                 >April 21,2019
@@ -62,7 +64,10 @@
                 />
                 by Paul</span
               >
-              <h5 class="my-3 py-3">Amazon gets CCI to acquire 49% stake in</h5>
+              <h5 class="my-3 py-3">
+                Shabnam Dhillion, wife of RSSB chief gurinder Dhillon, passes
+                away in London
+              </h5>
               <p>
                 When, while the lovely valley teems with vapour around meand
                 the...
@@ -90,10 +95,11 @@ export default {
 <style lang='scss' scoped>
 .row {
   color: white;
-  margin: 3rem;
+  margin: 2rem 0;
+
   .amazon {
     position: relative;
-    margin: 0 0.5rem;
+    margin: 2rem 0.5rem;
     border-radius: 20px;
     height: 400px;
     background-image: url("@/assets/img/amazon.jpg");
@@ -111,16 +117,18 @@ export default {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
   }
-  h5{
-    font-size: 1.5rem;
+  h5 {
+    font-size: 1.3rem;
     font-weight: bold;
   }
-  p,span,button{
+  p,
+  span,
+  button {
     font-size: 1rem;
   }
   .corporation,
   .london {
-    margin: 0 0.5rem;
+    margin: 2rem 0.5rem;
     border-radius: 20px;
     height: 400px;
     padding: 3.5rem;
@@ -136,9 +144,44 @@ export default {
     bottom: 1rem;
     left: 2rem;
   }
-  button{
-    margin-top: 4rem;
+  button {
+    margin: 1rem 0;
     padding: 0.5rem 2rem;
   }
+}
+
+@media only screen and (max-width: 1700px) {
+  .col-xxl-6{
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .col-xxl-3{
+        padding: 0 2rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .col-xxl-6{
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .col-xxl-3{
+        padding: 0 2rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .col-xl-1{
+    padding: 0;
+    margin: 0;
+  }
+
+  .corporation p, .london p{
+    display: none;
+  }
+
+
 }
 </style>

@@ -1,12 +1,7 @@
 @import '~/node_modules/bootstrap/scss/bootstrap.scss';
 
-/* Reset */
-p,li,span{
-  font-size: 1.3rem;
-}
-h2 > span{
-  font-size: 3.5rem;
-}
+/* Reset From Bootraps */
+
 * {
   margin: 0;
   padding: 0;
@@ -33,14 +28,18 @@ a {
   text-decoration: none;
 }
 
+p,li,span{
+  font-size: 1.2rem;
+}
+h2 > span{
+  font-size: 3.5rem;
+}
+
 #app {
   font-family: 'Cairo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-
   color: $pc-text-dark;
-
 }
 
 /* Utilities */
@@ -49,6 +48,9 @@ a {
 }
 .pc_text_secondary{
   color: $pc-text-light-secondary;
+}
+.pc_text_tertiary{
+  color:$pc-light-tertiary;
 }
 .pc_bg_dark{
   background-color: $pc-bg-dark;
@@ -66,10 +68,10 @@ a {
 }
 
 .pc_btn {
-  margin: 1rem;
-  font-size: 1.2rem;
-  padding: 0.4rem 1.6rem;
-  border-radius: 15px;
+  margin: 1rem 1rem 1rem 0;
+  font-size: 1.1rem;
+  padding: 0.7rem 2.3rem;
+  border-radius: 20px;
   white-space: nowrap;
 }
 

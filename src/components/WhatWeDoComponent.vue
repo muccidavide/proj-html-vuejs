@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="section_header text-center">
         <p class="pc_text_alert">Our Services</p>
-        <h2 class="display-4"><span class="fw-bold">What</span> We Do</h2>
+        <h2 class="display-5"><span class="fw-bold">What</span> We Do</h2>
         <p>When, while the lovely valley teems with vapour around meand the</p>
       </div>
       <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-4 px-3">
@@ -68,16 +68,17 @@ export default {
 
 <style lang='scss' scoped>
 .what_we_do {
-  margin: 5rem 0;
+  min-height: 100vh;
+  margin: 5rem 3rem;
   .pc_card {
-    padding: 4.5rem 4rem;
+    padding: 5.5rem 4rem 13rem ;
     position: relative;
     margin-top: 10rem ;
 
     img {
       position: absolute;
       aspect-ratio: 1/1;
-      width: 200px;
+      width: 150px;
       top: 0%;
       left: 50%;
       transform: translate(-50%,-50%);
@@ -86,6 +87,9 @@ export default {
     h3 {
       margin: 2rem 0;
     }
+  }
+  .pc_btn{
+    box-shadow: 0 0 25px 20px #f8626c37;
   }
 
   .pc_card:hover{

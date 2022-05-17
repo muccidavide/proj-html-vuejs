@@ -1,9 +1,9 @@
 <template>
   <footer>
     <div class="container-fluid">
-      <div class="row services align-items-center">
+      <div class="row row-cols-1 row-cols-xl-2 services align-items-center">
         <div class="col text-light">
-          <h2>We Offer Awesome Services</h2>
+          <h2 class="display-5 fw-bold">We Offer Awesome Services</h2>
           <p>
             When, while the lovely valley teems with vapour around meand the
             meridian sun strikes the upper surface.
@@ -24,73 +24,10 @@
           </div>
         </div>
       </div>
-      <div class="footer_nav pc_text_secondary">
-        <div class="row row-cols-4 text_primary">
-          <div class="col logo_link">
-            <div class="logo">
-              <LogoSiteComponent></LogoSiteComponent>
-            </div>
-
-            <div class="logo_info w-75">
-              <p>
-                When, while the lovely valley teems with vapour around meand the
-                meridian sun strikes the upperc surface.
-              </p>
-            </div>
-          </div>
-          <div class="col quick_links">
-            <h4 class="fw-bold">
-              <a href="#">Quick Links</a>
-            </h4>
-            <ul>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col resources">
-            <h4 class="fw-bold">
-              <a href="#">Resources</a>
-            </h4>
-            <ul>
-              <li>
-                <a href="#">Art Design</a>
-              </li>
-              <li>
-                <a href="#">Computer</a>
-              </li>
-              <li>
-                <a href="#">IT News</a>
-              </li>
-              <li>
-                <a href="#">Networking</a>
-              </li>
-              <li>
-                <a href="#">Web Security</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col contact_us">
-            <h4 class="fw-bold">
-              <a href="#">Contact Us</a>
-            </h4>
-            <address>
-              <span>Address:</span> Patricia C. amadee 4401 Waldeck Street
-              Grapevine Nashville, Tx 76051
-            </address>
-            <p><span>Phone:</span> +99(0)101 0000 888</p>
-            <p><span>Email:</span> Info@mydomain.com</p>
-          </div>
-        </div>
-      </div>
+      <FooterNavComponent
+        :logoInfo="logoInfo"
+        :navFooterItems="navFooterItems"
+      ></FooterNavComponent>
     </div>
     <div class="footer_copyrights pc_text_secondary align-items-center">
       <div class="container-fluid">
@@ -144,14 +81,38 @@
 </template>
 
 <script>
-import LogoSiteComponent from "@/components/LogoSiteComponent.vue";
+import FooterNavComponent from "@/components/FooterNavComponent.vue";
 export default {
   name: "FooterComponent",
   components: {
-    LogoSiteComponent,
+    FooterNavComponent,
   },
   data() {
-    return {};
+    return {
+      logoInfo:
+        "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upperc surface.",
+      navFooterItems: [
+        { title: "Quick Links", links: ["Services", "Contact", "Blog"] },
+        {
+          title: "Resources",
+          links: [
+            "Art Design",
+            "Computer",
+            "IT News",
+            "Networking",
+            "Web Security",
+          ],
+        },
+        {
+          title: "Contact Us",
+          adress:
+            "Patricia C. amadee 4401 Waldeck StreetGrapevine Nashville, Tx 76051",
+
+          phone: "+99(0)101 0000 888",
+          email: "Info@mydomain.coms",
+        },
+      ],
+    };
   },
   methods: {},
   mounted() {},
@@ -166,9 +127,12 @@ footer {
     rgb(255, 255, 255) 150px,
     $pc_bg_dark 150px
   );
+  p {
+    font-size: 1rem;
+  }
   .services {
-    margin: 5rem;
-    padding: 4rem;
+    margin: 5rem 2rem;
+    padding: 6rem 4rem;
     border-radius: 50px;
     background: rgb(182, 36, 110);
     background: linear-gradient(
@@ -177,40 +141,23 @@ footer {
       rgba(249, 99, 107, 1) 100%
     );
 
-    .subscribe_input {
-      height: 3rem;
-      padding: 0rem 1rem;
-      border-radius: 50px;
+    .subscribe_bar {
+            border-radius: 50px;
+            background-color: white;
+            padding: 0rem;
+            margin-top:1rem ;
+            button{
+              margin: 0.4rem;
+            }
+      .subscribe_input {
+        height: 3rem;
+        padding: 0rem 1rem;
+        border-radius: 50px;
+        border: none;
+      }
     }
   }
-  .footer_nav {
-    .logo{
-      margin-bottom: 2rem ;
-    }
 
-
-    a {
-      display: inline-block;
-    }
-    a:hover {
-      color: $pc-text-alert;
-    }
-
-    a,
-    p {
-      color: $pc-text-light-secondary;
-      font-size: 1rem;
-      margin: 0.5rem 0;
-    }
-    address {
-      margin: 2rem 0;
-    }
-
-    h4 > a,
-    span {
-      color: white;
-    }
-  }
   .footer_copyrights {
     margin-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.229);

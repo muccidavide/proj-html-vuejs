@@ -9,7 +9,7 @@
             <h2 class="fw-bold display-3">Modern Solution!</h2>
           </div>
           <div class="jumbo_info m-auto m-lg-0">
-            <p class="info">
+            <p class="info pc_text_tertiary">
               When, while the lovely valley teems with vapour around meand the
               meridian sun strikes the upper surface.
             </p>
@@ -42,13 +42,19 @@ export default {
 .jumbo {
   color: $pc-text-light-primary;
   background-color: $pc-bg-dark;
+  padding: 0 2rem;
   .jumbo_col {
     .jumbo_info {
       width: 75%;
       .info {
+        margin-top: 2rem;
         margin-bottom: 3rem;
       }
     }
+
   }
+      .jumbo_img_box{
+      margin: 1rem 0 5rem 2rem;
+    }
 }
 </style>

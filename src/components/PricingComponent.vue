@@ -1,10 +1,10 @@
 <template>
   <section class="pricing">
     <div class="container-fluid">
-      <div class="section_header text-center pc_text_primary">
+      <div class="section_header text-center pc_text_primary w-50 m-auto">
         <p class="pc_text_alert">Price List</p>
         <h2 class="display-4"><span class="fw-bold">Our</span> Pricing</h2>
-        <p>When, while the lovely valley teems with vapour around meand the</p>
+        <p class="pc_text_secondary">When, while the lovely valley teems with vapour around meand the meridian sun strikesupperface</p>
       </div>
       <div class="prices_list row row-cols-1 row-cols-lg-2 row-cols-xl-3">
         <div
@@ -59,9 +59,6 @@
             </div>
           </div>
 
-          <div class="price_shadow pc_text_secondary" data-title="40">
-            {{ card.price }}
-          </div>
         </div>
       </div>
     </div>

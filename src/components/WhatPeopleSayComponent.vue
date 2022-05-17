@@ -18,7 +18,7 @@
                 alt="profile img testimonial"
               />
             </div>
-            <div class="rating my-3">
+            <div class="rating">
               <font-awesome-icon icon="fa-solid fa-star" />
               <font-awesome-icon icon="fa-solid fa-star" />
               <font-awesome-icon icon="fa-solid fa-star" />
@@ -44,7 +44,7 @@
                 alt="profile img testimonial"
               />
             </div>
-            <div class="rating my-3">
+            <div class="rating">
               <font-awesome-icon icon="fa-solid fa-star" />
               <font-awesome-icon icon="fa-solid fa-star" />
               <font-awesome-icon icon="fa-solid fa-star" />
@@ -70,7 +70,7 @@
                 alt="profile img testimonial"
               />
             </div>
-            <div class="rating my-3">
+            <div class="rating">
               <font-awesome-icon icon="fa-solid fa-star" />
               <font-awesome-icon icon="fa-solid fa-star" />
               <font-awesome-icon icon="fa-solid fa-star" />
@@ -89,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row logo_row justify-content-center">
         <div class="col">
           <div class="logo_box">
             <img src="@/assets/img/client-1-1.png" alt="" />
@@ -135,6 +135,9 @@ export default {
 .testimonial_card {
   width: 80%;
   margin: 8rem auto;
+  p{
+    font-size: 1rem;
+  }
   .profile_img {
     margin: auto;
     max-width: 130px;
@@ -145,8 +148,14 @@ export default {
   }
 
   .rating {
+    margin: 2rem 0 ;
     color: $pc_text_alert;
   }
+}
+
+.logo_row{
+  width: 80%;
+  margin: auto;
 }
 .logo_box{
     width: 10rem;
