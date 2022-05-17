@@ -1,7 +1,7 @@
 <template>
   <section class="portfolio">
     <div class="container-fluid">
-      <div class="section_header row row-cols-2">
+      <div class=" row row-cols-2">
         <div class="col">
           <p class="pc_text_alert">Portfolio</p>
           <h2 class="display-5"><span class="fw-bold">latest</span> work</h2>
@@ -130,7 +130,9 @@ export default {
       return index === this.activeWork;
     },
   },
-  mounted() {},
+  mounted() {
+    
+  },
 };
 </script>
 
@@ -153,16 +155,18 @@ export default {
       flex-wrap: nowrap;
       .col-xxl-3 {
         min-width: 30%;
-                          margin: 1.5rem;
-
+        margin: 1.5rem;
+        .project_card:hover {
+          transform: scale(1.1);
+        }
 
         .project_card {
-
           width: 600px;
           min-width: 70%;
           max-width: 100%;
           border-radius: 20px;
           box-shadow: 0 0 20px lightgray;
+          transition: transform 2s;
           .project_img img {
             border-radius: 20px;
           }

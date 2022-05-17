@@ -93,9 +93,11 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.row {
+.latest_posts{
+  margin-top:8rem ;
+  .row {
   color: white;
-  margin: 2rem 0;
+  margin: 6rem 0 8rem 0;
 
   .amazon {
     position: relative;
@@ -149,6 +151,9 @@ export default {
     padding: 0.5rem 2rem;
   }
 }
+
+}
+
 
 @media only screen and (max-width: 1700px) {
   .col-xxl-6{

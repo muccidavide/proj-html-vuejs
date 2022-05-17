@@ -71,9 +71,9 @@ export default {
   min-height: 100vh;
   margin: 5rem 3rem;
   .pc_card {
-    padding: 5.5rem 4rem 13rem ;
+padding: 5.5rem 4rem 3rem;
     position: relative;
-    margin-top: 10rem ;
+    margin: 10rem 0;
 
     img {
       position: absolute;
@@ -96,6 +96,7 @@ export default {
     color: white;
     background: linear-gradient(0deg, rgb(3, 3, 49) 20%, rgb(24, 50, 112) 100%,white 0%,);
     border-radius:20px ;
+    
 
   }
 }

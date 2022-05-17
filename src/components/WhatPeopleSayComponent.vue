@@ -9,8 +9,8 @@
           meridian sun strikes the upperc surface.
         </p>
       </div>
-      <div class="row">
-        <div class="col-4">
+      <div class="row testimonials_row">
+        <div class="col-12 col-lg-4">
           <div class="testimonial_card text-center">
             <div class="profile_img">
               <img
@@ -36,33 +36,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="testimonial_card text-center">
-            <div class="profile_img">
-              <img
-                src="@/assets/img/testimonial_2.png"
-                alt="profile img testimonial"
-              />
-            </div>
-            <div class="rating">
-              <font-awesome-icon icon="fa-solid fa-star" />
-              <font-awesome-icon icon="fa-solid fa-star" />
-              <font-awesome-icon icon="fa-solid fa-star" />
-              <font-awesome-icon icon="fa-regular fa-star" />
-              <font-awesome-icon icon="fa-regular fa-star" />
-            </div>
-            <div class="details">
-              <p>
-                When, while the lovely valley teems with vapor around me, and
-                the meridian sun strikes the upper surface of the impenetrable
-                foliage of my trees, and but a thousand
-              </p>
-              <p class="fw-bold">Michkel Anegl</p>
-              <p>Marketing Managment</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="testimonial_card text-center">
             <div class="profile_img">
               <img
@@ -88,8 +62,34 @@
             </div>
           </div>
         </div>
+        <div class="col-12 col-lg-4">
+          <div class="testimonial_card text-center">
+            <div class="profile_img">
+              <img
+                src="@/assets/img/testimonial_2.png"
+                alt="profile img testimonial"
+              />
+            </div>
+            <div class="rating">
+              <font-awesome-icon icon="fa-solid fa-star" />
+              <font-awesome-icon icon="fa-solid fa-star" />
+              <font-awesome-icon icon="fa-solid fa-star" />
+              <font-awesome-icon icon="fa-regular fa-star" />
+              <font-awesome-icon icon="fa-regular fa-star" />
+            </div>
+            <div class="details">
+              <p>
+                When, while the lovely valley teems with vapor around me, and
+                the meridian sun strikes the upper surface of the impenetrable
+                foliage of my trees, and but a thousand
+              </p>
+              <p class="fw-bold">Michkel Anegl</p>
+              <p>Marketing Managment</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row logo_row justify-content-center">
+      <div class="row logo_row justify-content-center align-items-center">
         <div class="col">
           <div class="logo_box">
             <img src="@/assets/img/client-1-1.png" alt="" />
@@ -132,15 +132,19 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+.testimonials_row{
+  padding:5rem 0 ;
+}
 .testimonial_card {
   width: 80%;
-  margin: 8rem auto;
+  margin: 3rem auto;
+  max-width: 500px;
   p{
     font-size: 1rem;
   }
   .profile_img {
     margin: auto;
-    max-width: 130px;
+    max-width: 120px;
     img {
       border-radius: 50%;
       border: 5px solid #b6256f;
@@ -156,9 +160,10 @@ export default {
 .logo_row{
   width: 80%;
   margin: auto;
+  text-align: center;
 }
 .logo_box{
     width: 10rem;
-    margin: auto;
+    margin: 1rem auto;
 }
 </style>

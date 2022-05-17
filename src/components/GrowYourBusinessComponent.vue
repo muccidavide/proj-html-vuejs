@@ -46,6 +46,17 @@ export default {
     margin: 3rem 0;
   }
 }
+h2,button{
+  transition: transform 2s;
+}
+.jumbo:hover  h2{
+  transform: scale(1.2);
+}
+
+.jumbo:hover button{
+  transform: scale(1.05) ;
+  
+}
 
 .jumbo_img_box {
   margin: auto;

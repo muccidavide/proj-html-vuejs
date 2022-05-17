@@ -2,7 +2,10 @@
   <div class="footer_nav pc_text_secondary">
     <div
       class="
-        row row-cols-1 text-center m-auto row-cols-lg-2 row-cols-xl-4
+        row row-cols-1
+        text-center
+        m-auto
+        row-cols-lg-2 row-cols-xl-4
         text_primary
         justify-content-center
       "
@@ -18,7 +21,11 @@
           </p>
         </div>
       </div>
-      <div v-for="(navItem, index) in navFooterItems" :key="index" class="col">
+      <div
+        v-for="(navItem, index) in navFooterItems"
+        :key="index"
+        class="col nav_col"
+      >
         <div v-if="index < 2">
           <h4 class="fw-bold">
             <a href="#">{{ navItem.title }}</a>
@@ -70,6 +77,8 @@ export default {
 
 <style lang='scss' scoped>
 .footer_nav {
+
+
   .logo {
     margin-bottom: 2rem;
   }
@@ -95,7 +104,6 @@ export default {
   address {
     margin: 2rem auto;
     max-width: 80%;
-
   }
 
   h4 > a,

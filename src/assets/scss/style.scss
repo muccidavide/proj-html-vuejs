@@ -73,27 +73,31 @@ h2 > span{
   padding: 0.7rem 2.3rem;
   border-radius: 20px;
   white-space: nowrap;
+  ;
 }
 
 .btn_primary {
   background-color: $pc-btn-primary;
-  background: linear-gradient(90deg,
+  background-image: linear-gradient(90deg,
       $pc-btn-primary 0%,
       #f8626b 100%);
   color: $pc-text-light-primary;
+
+
 }
 
 .btn_primary:hover{
-  background: linear-gradient(90deg,
+  background-image: linear-gradient(90deg,
   $pc-btn-secondary 0%,
   #1e3f83 100%);
 color: $pc-text-light-primary;
+
 
 }
 
 .btn_secondary {
   background-color: $pc-btn-secondary;
-  background: linear-gradient(90deg,
+  background-image: linear-gradient(90deg,
       $pc-btn-secondary 0%,
       #1e3f83 100%);
   color: $pc-text-light-primary;
@@ -101,7 +105,7 @@ color: $pc-text-light-primary;
 
 .btn_secondary:hover{
   background-color: $pc-btn-primary;
-  background: linear-gradient(90deg,
+  background-image: linear-gradient(90deg,
       $pc-btn-primary 0%,
       #f8626b 100%);
   color: $pc-text-light-primary;
@@ -115,4 +119,9 @@ color: $pc-text-light-primary;
       }
     }
   }
+}
+
+.section_header{
+  max-width: 600px;
+  margin: auto;
 }

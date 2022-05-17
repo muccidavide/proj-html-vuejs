@@ -9,7 +9,7 @@
             meridian sun strikes the upper surface.
           </p>
         </div>
-        <div class="col">
+        <div class="col d-none d-lg-flex">
           <div class="subscribe_bar d-flex align-items-center">
             <label for="" class="form-label"></label>
             <input
