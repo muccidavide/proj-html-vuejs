@@ -41,8 +41,8 @@
             <a href="#">Contact Us</a>
           </h4>
           <ul>
-            <li>
-              <address>
+            <li class="text-center text-xxl-start">
+              <address class="address">
                 <span>Address: </span><small>{{ navItem.adress }}</small>
               </address>
             </li>
@@ -103,7 +103,6 @@ export default {
   }
   address {
     margin: 2rem 0;
-    max-width: 80%;
   }
 
   h4 > a,
