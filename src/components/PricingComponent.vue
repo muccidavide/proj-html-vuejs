@@ -4,11 +4,14 @@
       <div class="section_header text-center pc_text_primary w-50 m-auto">
         <p class="pc_text_alert">Price List</p>
         <h2 class="display-4"><span class="fw-bold">Our</span> Pricing</h2>
-        <p class="pc_text_secondary">When, while the lovely valley teems with vapour around meand the meridian sun strikesupperface</p>
+        <p class="pc_text_secondary">
+          When, while the lovely valley teems with vapour around meand the
+          meridian sun strikesupperface
+        </p>
       </div>
-      <div class="prices_list row row-cols-1 row-cols-lg-2 row-cols-xl-3 ">
+      <div class="prices_list row row-cols-1 row-cols-lg-2 row-cols-xl-3">
         <div
-          class="text-center col m-auto "
+          class="text-center col m-auto"
           v-for="(card, index) in pricesCard"
           :key="index"
         >
@@ -58,7 +61,6 @@
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -114,6 +116,23 @@ export default {
   background: linear-gradient($pc-bg-dark 500px, white 500px 100%);
   padding: 3rem 0;
 
+  .card_price:hover {
+    animation: shadow-drop-2-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.64) both;
+  }
+
+  .card_price:hover .pc_btn{
+    animation: flip-horizontal-bottom 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  }
+
+  @keyframes shadow-drop-2-center {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+
   .card_price {
     padding: 3rem;
     margin: 3rem auto;
@@ -121,6 +140,7 @@ export default {
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px hsl(0deg 0% 94%);
     max-width: 95%;
+    transition: shadow-drop-2-center 1s;
 
     .price_number {
       margin-top: 1.5rem;
@@ -154,15 +174,26 @@ export default {
         color: rgb(92, 92, 92);
       }
     }
-    .pc_btn {
-      padding: 0.3rem 2rem;
-      border-radius: 20px;
+
+
+    @keyframes flip-horizontal-bottom {
+      0% {
+        transform: rotateX(0);
+      }
+      50%{
+        transform: rotateX(-180deg);
+      }
+      100% {
+        transform: rotateX(-360deg);
+      }
     }
+
     .btn_primary:hover {
       background-color: white;
       background: white;
       color: #f8626b;
       border: 1px solid #f8626b;
+
     }
   }
   .central {
@@ -173,9 +204,6 @@ export default {
       color: rgb(216, 216, 216);
     }
     .pc_btn {
-      font-size: 1rem;
-      padding: 0.3rem 2rem;
-      border-radius: 20px;
       color: $pc-btn-primary;
       background: white;
     }
@@ -184,6 +212,7 @@ export default {
       background: linear-gradient(90deg, $pc-btn-primary 0%, #f8626b 100%);
       color: $pc-text-light-primary;
       border: 1px solid white;
+      animation: flip-horizontal-bottom;
     }
   }
   .order_now {

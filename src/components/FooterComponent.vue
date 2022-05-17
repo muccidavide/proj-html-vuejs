@@ -3,14 +3,14 @@
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-xl-2 services align-items-center">
         <div class="col text-light">
-          <h2 class="display-5 fw-bold">We Offer Awesome Services</h2>
+          <h2 class="display-5 fw-bold ">We Offer Awesome Services</h2>
           <p>
             When, while the lovely valley teems with vapour around meand the
             meridian sun strikes the upper surface.
           </p>
         </div>
         <div class="col d-none d-lg-flex">
-          <div class="subscribe_bar d-flex align-items-center">
+          <div class="subscribe_bar w-100 d-flex align-items-center">
             <label for="" class="form-label"></label>
             <input
               type="text"

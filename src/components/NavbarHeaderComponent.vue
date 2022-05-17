@@ -46,12 +46,10 @@ export default {
   color: $pc-text-alert;
 }
 
-.nav_item:hover{
-animation: slide-top 0.2s linear both;
 
-}
-
-
+  .logo {
+    animation: slide-in-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
   .nav_item,button {
     animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
@@ -66,7 +64,16 @@ animation: slide-top 0.2s linear both;
     }
   }
 
-
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 
 @keyframes slide-top {

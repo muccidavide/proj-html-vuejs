@@ -13,7 +13,7 @@
       <div class="posts">
         <div class="row align-items-center">
           <div class="col-xl-1 col-xxl-6">
-            <div class="amazon">
+            <div class="amazon" @click="showMeMore">
               <div class="info">
                 <span
                   >April 21,2019
@@ -28,6 +28,15 @@
                 <p>
                   When, while the lovely valley teems with vapour around meand
                   the, and the meridian su s...
+                </p>
+              </div>
+              <div  v-if="active" class="additional_info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur similique consequuntur quidem, quod facilis
+                  praesentium explicabo illum fugiat impedit accusamus fugit
+                  molestias ab eum excepturi inventore! Optio dolorem porro
+                  repudiandae?
                 </p>
               </div>
             </div>
@@ -70,7 +79,7 @@
               </h5>
               <p>
                 When, while the lovely valley teems with vapour around meand
-                the...
+                the, and the meridian su s...
               </p>
               <button class="pc_btn">Read More</button>
             </div>
@@ -85,108 +94,126 @@
 export default {
   name: "LatestPostsComponent",
   data() {
-    return {};
+    return {
+      active: false,
+    };
   },
-  methods: {},
+  methods: {
+    showMeMore() {
+      if (this.active) {
+        this.active = false;
+      } else {
+        this.active = true;
+      }
+    },
+  },
   mounted() {},
 };
 </script>
 
 <style lang='scss' scoped>
-.latest_posts{
-  margin-top:8rem ;
+.latest_posts {
+  margin-top: 8rem;
   .row {
-  color: white;
-  margin: 6rem 0 8rem 0;
+    color: white;
+    margin: 6rem 0 8rem 0;
 
-  .amazon {
-    position: relative;
-    margin: 2rem 0.5rem;
-    border-radius: 20px;
-    height: 400px;
-    background-image: url("@/assets/img/amazon.jpg");
-    background-size: cover;
-    max-width: 100%;
-    background-repeat: no-repeat;
-  }
-  .amazon::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-  }
-  h5 {
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  p,
-  span,
-  button {
-    font-size: 1rem;
-  }
-  .corporation,
-  .london {
-    margin: 2rem 0.5rem;
-    border-radius: 20px;
-    height: 400px;
-    padding: 3.5rem;
-    background: rgb(3, 3, 49);
-    background: linear-gradient(
-      121deg,
-      rgba(3, 3, 49, 1) 0%,
-      rgba(24, 50, 112, 1) 100%
-    );
-  }
-  .info {
-    position: absolute;
-    bottom: 1rem;
-    left: 2rem;
-  }
-  button {
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
+    .amazon {
+      position: relative;
+      margin: 2rem 0.5rem;
+      border-radius: 20px;
+      height: 400px;
+      background-image: url("@/assets/img/amazon.jpg");
+      background-size: cover;
+      max-width: 100%;
+      background-repeat: no-repeat;
+      .additional_info {
+        border: 1px solid rgba(167, 167, 167, 0.347);
+        border-radius: 20px;
+        box-shadow: 0 0 20px lightgrey;
+        background-color: rgb(255, 255, 255);
+        color: $pc-text-dark;
+        position: absolute;
+        padding: 2rem;
+        bottom: -160px;
+        left: 0;
+      }
+    }
+    .amazon::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+    }
+    h5 {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    p,
+    span,
+    button {
+      font-size: 1rem;
+    }
+    .corporation,
+    .london {
+      margin: 2rem 0.5rem;
+      border-radius: 20px;
+      height: 400px;
+      padding: 3.5rem;
+      background: rgb(3, 3, 49);
+      background: linear-gradient(
+        121deg,
+        rgba(3, 3, 49, 1) 0%,
+        rgba(24, 50, 112, 1) 100%
+      );
+    }
+    .info {
+      position: absolute;
+      bottom: 1rem;
+      left: 2rem;
+    }
+    button {
+      margin: 1rem 0;
+      padding: 0.5rem 2rem;
+    }
   }
 }
-
-}
-
 
 @media only screen and (max-width: 1700px) {
-  .col-xxl-6{
+  .col-xxl-6 {
     width: 100%;
     padding: 0 2rem;
   }
-  .col-xxl-3{
-        padding: 0 2rem;
+  .col-xxl-3 {
+    padding: 0 2rem;
     width: 50%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .col-xxl-6{
+  .col-xxl-6 {
     width: 100%;
     padding: 0 2rem;
   }
-  .col-xxl-3{
-        padding: 0 2rem;
+  .col-xxl-3 {
+    padding: 0 2rem;
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .col-xl-1{
+  .col-xl-1 {
     padding: 0;
     margin: 0;
   }
 
-  .corporation p, .london p{
+  .corporation p,
+  .london p {
     display: none;
   }
-
-
 }
 </style>
